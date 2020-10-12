@@ -1,0 +1,20 @@
+#类图
+@startuml
+ReentrantLock -> NonfairSync: lock
+NonfairSync -> AQS: acquire
+activate NonfairSync #FFBBBB
+activate AQS
+AQS -> AQS: tryAcquire(internal call)
+activate AQS #DarkSalmon
+
+AQS -> NonfairSync: tryAcquire
+activate NonfairSync
+
+NonfairSync -> NonfairSync: nonfairTryAcquire(1)
+
+@enduml
+#类关系
+@startuml
+AQS <- Sync: extends
+Sync <- NonfairSync:extends
+@enduml
