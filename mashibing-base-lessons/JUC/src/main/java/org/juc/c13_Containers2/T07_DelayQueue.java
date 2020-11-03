@@ -56,7 +56,6 @@ public class T07_DelayQueue {
 
         @Override
         public long getDelay(TimeUnit unit) {
-            System.out.println("----------------");
             return unit.convert(taskExecuteTime - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
         }
 
