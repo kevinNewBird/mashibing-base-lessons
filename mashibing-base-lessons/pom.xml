@@ -9,6 +9,7 @@
     <version>BASE.RELEASE</version>
     <modules>
         <module>JUC</module>
+        <module>JMH</module>
     </modules>
     <packaging>pom</packaging>
 
