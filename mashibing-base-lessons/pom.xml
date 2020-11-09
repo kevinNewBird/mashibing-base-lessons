@@ -10,6 +10,7 @@
     <modules>
         <module>JUC</module>
         <module>JMH</module>
+        <module>Distuptor</module>
     </modules>
     <packaging>pom</packaging>
 
