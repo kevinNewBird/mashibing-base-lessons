@@ -9,6 +9,8 @@
     <version>BASE.RELEASE</version>
     <modules>
         <module>JUC</module>
+        <module>JMH</module>
+        <module>Distuptor</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,6 +35,10 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
 
