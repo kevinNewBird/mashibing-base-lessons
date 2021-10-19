@@ -1,13 +1,10 @@
 package org.juc.c14_01_ThreadPool;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 
 /***********************
  * Description: TODO <BR>
