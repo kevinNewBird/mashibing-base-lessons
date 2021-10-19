@@ -1,13 +1,8 @@
 package org.juc.c14_02_WWJCompletableFuture;
 
-import com.sun.xml.internal.ws.util.CompletedFuture;
-import org.junit.Test;
-
-import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
 
 /***********************
  * Description: 工厂方法 <BR>
@@ -26,7 +21,7 @@ public class T02_00_CompletableFuture_FactorytMethod {
 
 
     //1. 工厂方法:supplyAsync(创建Future实例)
-    private static Future<?> testSupplyAsync(){
+    private static Future<?> testSupplyAsync() {
 
         CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "Hello");
         return future;
@@ -34,13 +29,13 @@ public class T02_00_CompletableFuture_FactorytMethod {
 
 
     //2. 工厂方法:runAsync (创建Future实例)(将结果转换为另一个值)
-    private static Future<?> testRunAsync(){
+    private static Future<?> testRunAsync() {
         CompletableFuture<?> future = CompletableFuture.runAsync(() -> System.out.println("Hello"));
         return future;
     }
 
     //3. 构造方法(创建Future实例)
-    private static Future<?> testConstructor(){
+    private static Future<?> testConstructor() {
         return new CompletableFuture<>();
     }
 
